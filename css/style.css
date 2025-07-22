@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+.hero {
+  background: linear-gradient(135deg, #005eff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.cta {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.split > div {
+  flex: 1;
+  min-width: 280px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+table th {
+  background: #f0f0f0;
+}
+footer {
+  background: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
