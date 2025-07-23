@@ -92,6 +92,8 @@ table th {
       color: red;
       font-weight: bold;
        gap: 10px;
+   
+       
     }
 
 .navbar {
@@ -101,7 +103,25 @@ table th {
   position: sticky;
   top: 0;
   gap: 10px;
+  padding: 20px;
+  z-index: 1000;
+  
 }
+
+  .navbar-nav .nav-item {
+    margin: 0 15px; /* Jarak kiri-kanan antar menu */
+  }
+
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 8px 10px;
+    color: #333;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #dc3545; /* warna merah untuk menu aktif */
+  }
+
 
 .navbar-container {
   padding: 10px 20px;
@@ -111,17 +131,17 @@ table th {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-   gap: 10px;
+  
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .logo img {
-  height: 65px;
+  height: 85px;
 }
 
 .logo-text strong {
@@ -145,19 +165,25 @@ table th {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 35px;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
 }
 
 .nav-links a {
   text-decoration: none;
   color: #111;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a.active {
   color: #d12020;
   font-weight: bold;
+
 }
 
 .dropdown {
