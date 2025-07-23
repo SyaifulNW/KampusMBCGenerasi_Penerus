@@ -88,11 +88,19 @@ table th {
 }
 /* Navbar */
 
-
+   .navbar-nav .nav-link.active {
+      color: red;
+      font-weight: bold;
+       gap: 10px;
+    }
 
 .navbar {
   background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  gap: 10px;
 }
 
 .navbar-container {
@@ -103,6 +111,7 @@ table th {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+   gap: 10px;
 }
 
 .logo {
@@ -154,7 +163,7 @@ table th {
 .dropdown {
   position: relative;
   display: inline-block;
-    
+
 }
 
 .dropdown-menu {
