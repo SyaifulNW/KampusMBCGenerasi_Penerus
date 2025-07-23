@@ -7,6 +7,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+  // Toggle Mobile Menu
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Dropdown Toggle di Mobile
+  document.querySelectorAll('.dropdown > a').forEach(dropdown => {
+    dropdown.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  });
+
+
+
 // Tambahkan event listener untuk tombol CTA
 // dan tampilkan notifikasi di konsol saat diklik
 // Pastikan elemen dengan kelas "cta" ada sebelum menambahkan event listener
