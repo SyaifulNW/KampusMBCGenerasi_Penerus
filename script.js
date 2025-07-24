@@ -8,7 +8,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+  const toggleBtn = document.getElementById('toggle-btn');
+  const fullContent = document.getElementById('full-content');
 
+  let isShown = false;
+
+  toggleBtn.addEventListener('click', () => {
+    isShown = !isShown;
+    if (isShown) {
+      fullContent.style.display = 'block';
+      setTimeout(() => fullContent.style.opacity = 1, 50);
+      toggleBtn.textContent = 'Read less';
+    } else {
+      fullContent.style.opacity = 0;
+      setTimeout(() => fullContent.style.display = 'none', 500);
+      toggleBtn.textContent = 'Read more';
+    }
+  });
 
 
 // Tambahkan event listener untuk tombol CTA
